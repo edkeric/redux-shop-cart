@@ -1,0 +1,57 @@
+html {
+  font-size: 80%;
+  box-sizing: border-box;
+}
+body,
+#root {
+  height: 100vh;
+  margin: 0;
+}
+body,
+input,
+select,
+textarea {
+  font-size: 1.6rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+
+a:hover {
+  color: blanchedalmond;
+}
+
+header {
+  grid-area: header;
+  background-color: rgb(65, 8, 8);
+  color: blanchedalmond;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+header a {
+  color: blanchedalmond;
+  text-decoration: none;
+}
+main {
+  grid-area: main;
+  background-color: rgb(248, 239, 227);
+}
+footer {
+  grid-area: footer;
+  background-color: rgb(66, 20, 20);
+  color: rgb(133, 17, 17);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
